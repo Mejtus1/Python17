@@ -29,5 +29,38 @@ print(name3)
     print(name3) #here we have indentation error because of tap 
 
 
-#DATA TYPES IN PYTHON ..................................
-54:27
+#DATA TYPES IN PYTHON 
+
+#Strings
+name = "Beau" #string data type 
+print(type(name)) #class str = python outputs typo of this data type 
+print(type(name) == str) # if name is equal using equality operator to string 
+print(isinstance(name, str)) #if name is an instance of a string 
+
+#Integer numbers 
+#int = 1 
+#float = 2.14
+
+age = 2
+print(isinstance(age, int)) #true age is integer 
+ageFloat = 2.78
+print(type(ageFloat) == float) #true ageFloat is float 
+
+#we can convert data types in python 
+ageIntFloat = float(2) #althrough 2 is integer we can assign it data type float 
+print(isinstance(ageIntFloat, float)) #true because we assigned it data type float 
+
+number = "test"
+age2 = int(number)
+print(isinstance(age, int)) #we cannot convert string to integer(number)
+#Other types are 
+# complex for complex numbers, 
+# bool for booleans, 
+# list for lists, 
+# tuple for tuplets
+# range for ranges 
+# dict for dictionaries 
+# set for sets
+
+
+#Operators 
