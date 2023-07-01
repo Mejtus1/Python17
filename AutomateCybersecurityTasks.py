@@ -38,3 +38,23 @@ print(["dtanaka", "mabadi", "aestrada"]) #(like arrays in JS)
 #--------------------------------------------------------------------------#
 #--------------------------------------------------------------------------#
 # Work with variables in python 
+# creating variables is called assigment 
+# we can reassign a variable whenever we want 
+device_id = "hb2r17"
+device_id = "145236hre" #reassign
+print(device_id)
+#we can ask python to tell us a data type of our variable
+data_type = type(device_id)
+print(data_type) #python tells us it is a string (str)
+
+#Type error 
+#an error that results from using the wrong data type 
+number = 3
+print(number + device_id) #throws type error
+#python cannot combine two different data types
+
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#Conditional statements in python 
