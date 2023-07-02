@@ -63,4 +63,29 @@ print(isinstance(age, int)) #we cannot convert string to integer(number)
 # set for sets
 
 
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
 #Operators 
+
+#Arithmetic operators 
+1 + 1 # 2
+2 - 2 # 0
+2 * 2 # 4
+2 / 2 # 1
+4 % 3 #remainder (how many are inside of given number) 1
+4 ** 2 #exponents (4 to the power of 2 is 16) 16
+5 // 2 #floor division (does division and rounds down to the nearest whole number)
+# 2
+1 + -1 # 0 (negative values)
+print("Scamp" + " is a good dog") # plus sign (+) can be used to combine 
+# plus sign (assignment operator) can be used also for adding syntax
+age = 7
+age += 7 #adds age = age + 7 
+print(age) # 14
+#this can be done with any of arithmetic operators 
+year = 17
+year *= 17 #multiplies year = year * 17
+print(year)
+
+#Comparison operators
