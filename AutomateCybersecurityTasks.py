@@ -128,7 +128,7 @@ else:
 
 #other examples
 
-"check other status":
+status = "check other status":
 if status == 200:
     print("OK")
 else:
@@ -161,7 +161,71 @@ if status == 100 or status == 102:
 if not(status >= 200 and status <= 226):
     print("check status") #checking when something is out of succesful code
 
+#Exercises
+system = "OS 2"
+if ("OS 2"):
+    print("no update needed")
 
+system2 = "OS 1"
+if system2 == "OS 2":
+    print("no update needed")
+else:
+    print("update needed")
+
+system3 = "1"
+if system3 == "OS 2":
+    print("no update needed")
+elif system3 == "OS 1":
+    print("update needed")
+elif system3 == "OS 3":
+    print("update needed")
+
+
+system4 = "OS 2"
+if system4 == "OS 1":
+    print("no update needed")
+elif system4 == "OS 2" or "OS 3":
+    print("update needed")
+
+
+approved_user1 = "elarson"
+approved_user2 = "bmoreno"
+username = "bmoreno"
+if user == approved_user1 or approved_user2:
+    print("This user has access to this device.")
+else
+    print("This user does not have access to this device.")
+
+
+approved_list = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+username = "bmoreno"
+if username in approved_list:
+    print("approved")
+else:
+    print("You do not have access to this device")
+
+#Main exercise
+approved_list = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+username = "bmoreno"
+if username in approved_list:
+    print("This user has access to this device.")
+else:
+    print("This user does not have access to this device.")
+organization_hours = True
+if organization_hours == True:
+    print("Login attempt made during organization hours.")
+else:
+    print("Login attempt made outside of organization hours.")
+
+#Main exercise2 (using and)
+approved_list = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+username = "bmoreno"
+organization_hours = True
+if username in approved_list and organization_hours == True:
+    print("Login attempt made by an approved user during organization hours.")
+else:
+    print("Username not approved or login attempt made outside of organization hours.")
+    
 
 
 #--------------------------------------------------------------------------#
