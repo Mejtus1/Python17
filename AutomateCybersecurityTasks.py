@@ -244,3 +244,14 @@ range(10)   # if we dont provide start point for range it automatically starts f
 for i in range(10):
     print("Cannot connect to the destination.") #python writes it 10 times
 
+
+#While loops 
+#while loops still repeatedly execute, but this repetition is based on condition
+#as long as a condition is true it runs)
+max_devices =5
+i = 1
+while i < max_devices:
+    print("User can still connect to additional devices")
+    i = i + 1 #we increment i by 1 
+print("User has reached maximum number of connected devices") #outside of the loop
+
