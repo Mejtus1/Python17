@@ -53,6 +53,53 @@ number = 3
 print(number + device_id) #throws type error
 #python cannot combine two different data types
 
+#Exercises
+device_id = "72e08x0"
+print(device_id)
+
+# Assign the `device_id` variable to the device ID that only specified users can access
+device_id = "72e08x0"
+# Assign `device_id_type` to the data type of `device_id`
+device_id_type = type(device_id)
+# Display `device_id_type`
+print(device_id_type)
+    
+# Assign `username_list` to the list of usernames who are allowed to access the device
+username_list = ["madebowa", "jnguyen", "tbecker", "nhersh", "redwards"]
+# Display `username_list`
+print(username_list)
+
+# Assign `username_list` to the list of usernames who are allowed to access the device
+username_list = ["madebowa", "jnguyen", "tbecker", "nhersh", "redwards"]
+# Assign `username_list_type` to the data type of `username_list`
+username_list_type = type(username_list)
+# Display `username_list_type`
+print(username_list_type)
+
+# Assign `username_list` to the list of usernames who are allowed to access the device
+username_list = ["madebowa", "jnguyen", "tbecker", "nhersh", "redwards"]
+# Display `username_list`
+print(username_list)
+
+# Assign `max_logins` to the value 3
+max_logins = 3
+# Assign `max_logins_type` to the data type of `max_logins`
+max_logins_type = type(max_logins)
+# Display `max_logins_type`
+print(max_logins_type)
+
+# Assign `login_attempts` to the value 
+login_attempts = 2
+# Assign `login_attempts_type` to the data type of `login_attempts`
+login_attempts_type = type(login_attempts)
+# Display `login_attempts_type`
+print(login_attempts)
+# Assign `login_status` to the Boolean value False
+login_status = 5
+# Assign `login_status_type` to the data type of `login_status`
+login_status_type = type(login_status)
+# Display `login_status_type`
+print(login_status_type)
 
 
 #--------------------------------------------------------------------------#
