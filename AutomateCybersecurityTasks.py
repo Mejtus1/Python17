@@ -123,8 +123,45 @@ operating_system2 = "OS 2"
 operating_system3 = "OS 3"
 if operating_system3 == "OS 2": # dont forget :
     print("updates needed")
-else:                           # dont forget :
+else:
     print("No updates needed")
+
+#other examples
+
+"check other status":
+if status == 200:
+    print("OK")
+else:
+    print("check other status")
+
+#HTTP response python example 
+if status == 200:
+    print("OK")
+elif status == 400:
+    print("Bad Request")
+elif status == 500:
+    print("Internal Server Error") 
+
+
+#AND in python 
+#and operator requires both conditions to be true 
+#HTTP example 
+if status >= 200 and status <= 226: #HTTP responses between 200 and 226 are successful
+    print("successful response")
+
+#OR operator in python 
+#OR operator requires only one condition to be true 
+#HTTP example
+#both 100 and 102 are informal responses 
+if status == 100 or status == 102:
+    print("informational response")
+
+#NOT operator in python 
+#NOT operator negates the given condition so that it evaulates to false
+if not(status >= 200 and status <= 226):
+    print("check status") #checking when something is out of succesful code
+
+
 
 
 #--------------------------------------------------------------------------#
