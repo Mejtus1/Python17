@@ -105,3 +105,27 @@ print(login_status_type)
 #--------------------------------------------------------------------------#
 #--------------------------------------------------------------------------#
 #Conditional statements in python 
+#A statement that evaulates code to determine if it meets a specified set of conditions
+#"if" starts a conditional statement 
+if failed_attempts > 5:
+    print("Account locked")
+
+#operators = > < >= <= == != 
+operating_system = "OS 2"
+if operating_system == "OS 2":
+    print("Updates needed")
+
+#else
+#precedes a code section that only evaluates when all conditions that precede
+#within the conditional statement evaluate to False
+
+operating_system2 = "OS 2"
+operating_system3 = "OS 3"
+if operating_system3 == "OS 2": # dont forget :
+    print("updates needed")
+else:                           # dont forget :
+    print("No updates needed")
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
