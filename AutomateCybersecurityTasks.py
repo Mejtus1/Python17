@@ -230,3 +230,17 @@ else:
 
 #--------------------------------------------------------------------------#
 #--------------------------------------------------------------------------#
+#For loops 
+#Iterative statement = code that repeatedly executes a set of instructions (loops)
+#they allow us to repeatedly use a line of code without having to type it multiple times
+for i in [1,2,3,4]:
+    print(i)
+#for starts a statement 
+# i = loop variable, is used to control iterations fo a loop 
+# in [1,2,3,4] (list) 
+range(0,10) # range specifies sequence 
+range(10)   # if we dont provide start point for range it automatically starts from 0
+
+for i in range(10):
+    print("Cannot connect to the destination.") #python writes it 10 times
+
