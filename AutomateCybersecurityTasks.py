@@ -297,3 +297,13 @@ for i in range(0, 5, 1):
 for i in range(5):
   print(i)
 #otherwise they should be specified
+
+#while loops
+#loops based on condition
+#as long as the condition is true, the loop continues until the condition is false
+i = 1
+while i < 5:
+  print(i)
+  i = i + 1
+# i is assigned before loop header
+# body indicates the actions to take with each iteration
