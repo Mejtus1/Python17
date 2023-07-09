@@ -267,3 +267,18 @@ for i in ["elarson", "bmonero", "tsash", "sigilmore"]:
 if "elarson" in ["elarson", "bmonero", "tsash", "sigilmore"]
 #this is example of in used: in conditional state - evaulate if an object is part of an object sequence
 #evaulates to true
+
+#Looping through a list
+#for loops in python allow you to easily iterate throught list
+#example: asset is a loop variable and computer_assets is the sequence
+computer_assets = ["laptop01", "desktop13", "smartphone17", "laptop07"]
+for asset in computer_assets:
+  print(character)
+#first iteration = output("laptop01")
+
+#it is also possible to iterate through string
+string = "security"
+for character in string:
+  print(character)
+
+  
