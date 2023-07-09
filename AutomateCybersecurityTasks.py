@@ -281,4 +281,19 @@ string = "security"
 for character in string:
   print(character)
 
-  
+#using range()
+#the range function generates a sequence of numbers
+#it accepts: start point, stop point, increment
+
+range (0, 5, 1)
+#start sequence of numbers at 0, stop at 5, increment by 1
+
+for i in range(0, 5, 1):
+  print(i)
+#5 is excluded from this range 0-4 is outputted
+
+#start and stop point should be always included into the function code
+#exception is start of 0 and increment by 1
+for i in range(5):
+  print(i)
+#otherwise they should be specified
