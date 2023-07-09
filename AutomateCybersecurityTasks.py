@@ -255,3 +255,15 @@ while i < max_devices:
     i = i + 1 #we increment i by 1 
 print("User has reached maximum number of connected devices") #outside of the loop
 
+#more on loops in python
+#iterative statement is a code that repeatedly executes a set of instructions (for loops are used to loop over a sequence)
+#for loop
+#if you need to iterate through a specified sequence, you should use a for loop
+for i in ["elarson", "bmonero", "tsash", "sigilmore"]:
+  print(i)
+#the : must be at the end of each for loop header
+#this is example of loop where in operator is used to loop over a sequence
+
+if "elarson" in ["elarson", "bmonero", "tsash", "sigilmore"]
+#this is example of in used: in conditional state - evaulate if an object is part of an object sequence
+#evaulates to true
