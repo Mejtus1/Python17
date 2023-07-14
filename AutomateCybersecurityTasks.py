@@ -325,3 +325,13 @@ login attempts login_attempts + 1
 #a loop variable equals a value like True or False. 
 #The loop iterates an indeterminate number of times until the Boolean condition is no longer True
 
+#Boolean values in the loop condition
+count = 0
+login_status = True
+while login_status == True:
+    print("Try again.")
+    count = count + 1
+    if count == 4:
+        login_status = False
+#while only iterates when login_status is True
+
