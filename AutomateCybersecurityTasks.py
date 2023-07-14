@@ -307,3 +307,21 @@ while i < 5:
   i = i + 1
 # i is assigned before loop header
 # body indicates the actions to take with each iteration
+
+#integers in loop condition
+#Often, as just demonstrated, the loop condition is based on integer values. 
+
+#For example you might want to allow a user to log in as long as they've logged in less than five times. 
+#Then, your loop variable, login_attempts, can be initialized to 0, incremented by 1 in the loop, and the loop condition can specify to iterate only when the variable is less than 5.
+login_attempts = 0
+while login attempts < 5:                 
+    print("Login attempts:", login attempts)
+login attempts login_attempts + 1
+#The value of login attempts went from 0 to 4 before the loop condition evaluated to False. Therefore, the values of 0 through 4 print, and the value 5 does not print.
+
+#Boolean values in the loop condition
+#Conditions in while loops can also depend on other data types, including comparisons 
+#of Boolean data in Boolean data comparisons, your loop condition can check whether 
+#a loop variable equals a value like True or False. 
+#The loop iterates an indeterminate number of times until the Boolean condition is no longer True
+
