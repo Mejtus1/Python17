@@ -335,3 +335,24 @@ while login_status == True:
         login_status = False
 #while only iterates when login_status is True
 
+#managing loops 
+#you can use break and continue keywords to further control you loop iterations
+
+#break
+#it is used when you want to exit a for or while loop based on particular condition
+computer_assets = ["laptop1", "desktop20", "smartphone03"]
+for asset in computer_assets:
+    if asset == "desktop20":
+        break #using break in the code
+    print(asset)
+#values of desktop20 and smartphone03 dont print 
+
+#continue
+#is used to skip iteration over certain element
+computer_assets = ["laptop1", "desktop20", "smartphone03"]
+for asset in computer_assets:
+    if asset == "desktop20":
+        continue #using continue to skip over desktop asset
+    print(asset)
+
+#in infinite loop scenario you sould press CTRL-C or CTRL-Z 
