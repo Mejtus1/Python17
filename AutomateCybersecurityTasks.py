@@ -356,4 +356,3 @@ for asset in computer_assets:
     print(asset)
 
 #in infinite loop scenario you sould press CTRL-C or CTRL-Z 
-
