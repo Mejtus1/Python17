@@ -71,3 +71,24 @@ def greet_employee2(first_name2, last_name2):
     print("Welcome! You are logged in", first_name2, last_name2)
 
 greet_employee2("Vicky", "Jack")
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#Return statements
+#a python statement that executes inside a function and sends information back to the function call
+
+def calculate_fails(total_attempts, failed_attempts):
+    fail_percentage = failed_attempts / total_attempts
+    return fail_percentage
+
+calculate_fails(4,2)
+#fail_percentage cannot be used outside of the scope of the function 
+#for that we need to store output of our function in another variable 
+percentage = calculate_false(4,2)
+
+if (percentage >= .5):
+    print("Account locked")
+
+#if the percentage is higher than 50% (0.5) then the account is locked
+
