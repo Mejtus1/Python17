@@ -397,3 +397,35 @@ for i in ip_addresses:
 	else:
 		print("IP address is not allowed")
                 
+
+#break using loops 
+allow_list = ["192.168.243.140", "192.168.205.12", "192.168.151.162", "192.168.178.71", 
+              "192.168.86.232", "192.168.3.24", "192.168.170.243", "192.168.119.173"]
+ip_addresses = ["192.168.142.245", "192.168.109.50", "192.168.86.232", "192.168.131.147",
+                "192.168.205.12", "192.168.200.48"]
+# For each IP address in the list of IP addresses from which users have tried to log in, 
+# If it is among the allowed addresses, then display “IP address is allowed”
+# Otherwise, display “IP address is not allowed”
+for i in ip_addresses:
+	if i in allow_list:
+		print("IP address is allowed")
+    else) 
+        print("IP address is not allowed")
+        #break 
+
+#creating IDs numbers between 5000 and 5150
+i = 5000
+while i <= 5150: 
+    print(i)
+    i += 5
+
+i = 5000
+
+#creating IDs with text if only 10 are remaining
+while i <= 5150: 
+    print(i)
+    if i == 5100:
+        print("only 10 valid IDs remaining")
+    i = i + 5
+
+
