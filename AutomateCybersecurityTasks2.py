@@ -25,3 +25,25 @@ if email_status == "potential concern":
 
 
 #python functions exercises
+def alert():
+    print("Potential security issue. Investigate further.")
+
+#function using for loops 
+def alert1(): 
+    for i in range(3):
+        print("Potential security issue. Investigate further.")
+alert1()
+
+#Main Exercise
+#developing a function with a list of approved usernames
+def list_to_string():
+
+username_list = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab", "gesparza", "alevitsk", "wjaffrey"]
+
+sum_variable = ""
+
+for i in username_list:
+    sum_variable = sum_variable + i + ", "
+    print(sum_variable)
+
+list_to_string()
