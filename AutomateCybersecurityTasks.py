@@ -356,3 +356,44 @@ for asset in computer_assets:
     print(asset)
 
 #in infinite loop scenario you sould press CTRL-C or CTRL-Z 
+
+
+
+#exercises
+for i in range(0, 3, 1):
+    print("Connection could not be established.")
+
+#we can also use a variable in range() function 
+connection_attempts = 3
+for i in range(0, connection_attempts, 1):
+    print("Connection could not be established")
+
+#while loop
+while connection_attemps == 3:
+    print("Connection could not be established.")
+    connection_attempts = connection_attempts + 1
+
+
+#automate checking whether IP addresses are part of an allow list.
+ip_addresses = ["192.168.142.245", "192.168.109.50", "192.168.86.232", "192.168.131.147",
+                "192.168.205.12", "192.168.200.48"]
+
+for i in ip_addresses:
+    print(i)
+
+
+#IP ADDRESS check list using for and if 
+allow_list = ["192.168.243.140", "192.168.205.12", "192.168.151.162", "192.168.178.71", 
+              "192.168.86.232", "192.168.3.24", "192.168.170.243", "192.168.119.173"]
+
+ip_addresses = ["192.168.142.245", "192.168.109.50", "192.168.86.232", "192.168.131.147",
+                "192.168.205.12", "192.168.200.48"]
+# For each IP address in the list of IP addresses from which users have tried to log in, 
+# If it is among the allowed addresses, then display “IP address is allowed”
+# Otherwise, display “IP address is not allowed”
+for i in ip_addresses:
+	if i in allow_list:
+		print("IP address is allowed")
+	else:
+		print("IP address is not allowed")
+                
