@@ -92,3 +92,47 @@ if (percentage >= .5):
 
 #if the percentage is higher than 50% (0.5) then the account is locked
 
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#Global and local variables
+#When defining and calling functions, you're working with local variables
+#A global variable is a variable that is available through the entire program. 
+#Global variables are assigned outside of a function definition.
+
+#For example, you might assign the following variable at the beginning of your code:
+device_id = "7ad2130bd
+
+#Local variable 
+def greet_employee(name):           #name is a local variable
+    total_string = "Welcome" + name #total_string is a local variable
+    return total_string
+#The variable total_string is a local variable because it's assigned inside of the function. 
+#The parameter name is a local variable because it is also created when the function is defined. 
+
+
+#Best practices for using LOCAL and GLOBAL variables
+#it is very important to make sure that you only use a certain variable name once, 
+#even if one is defined globally and the other is defined locally. 
+username = "elarson"
+def identify_user():
+    print(username)
+identify_user()
+#function can access username elarson even when it is outside of its scope, because it is globally assigned
+
+#scopes
+username = "elarson" #global variable
+print("1:" + username)
+def greet():
+    username = "bmoreno" #we reeasign variable here, and it becomes local 
+    print("2:" + username) #so reeasigned variable username is now inside function
+greet()                    #bmoreno BUT OUTSIDE FUNCTION IS STILL elarson 
+print("3:" + username)     #the username variable doesnt change on global scale
+
+
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#Build in functions 
