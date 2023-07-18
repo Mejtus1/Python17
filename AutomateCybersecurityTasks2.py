@@ -197,6 +197,24 @@ print(time_list)
 
 
 #more on python build in functions (activity with code)
+#sorting months 
+failed_login_list = [119, 101, 99, 91, 92, 105, 108, 85, 88, 90, 264, 223]
+print(sorted(failed_login_listlogin_list))
+
+#printing out highest number of infcidents month
+failed_login_list = [119, 101, 99, 91, 92, 105, 108, 85, 88, 90, 264, 223]
+print(max(failed_login_list))
+
+#program for loggin analysis and warning when certain condition is met 
+def analyze_logins(username, current_day_logins, average_day_logins):
+    print("Current day login total for", username, "is", current_day_logins)
+    print("Average logins per day for", username, "is", average_day_logins)
+    login_ratio = current_day_logins / average_day_logins
+    return login_ratio
+
+login_analysis = analyze_logins("ejones", 9, 3)
+if login_analysis >= 3:
+    print("Alert! This account has more login activity than normal.")
 
 
 
@@ -220,3 +238,6 @@ print(time_list)
 #NumPx = for arrays and mathematical computations
 
 
+#Import modules and libraries in Python 
+#module is a Python file that contains additional functions, variables, classes, and any kind of runnable code
+#library is a collection of modules that provide code users can access in their programs.
