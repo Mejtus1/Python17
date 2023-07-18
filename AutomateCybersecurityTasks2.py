@@ -159,3 +159,39 @@ usernames = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
 print(sorted(usernames))
 #when we run it everything is in order
 
+
+#Exploring types of build in functions 
+#print() 
+#The print() function outputs a specified object to the screen.
+month = "September"
+print("Investigate failed login attempts during", month, "if more than", 100)
+
+#type()
+#The type() function returns the data type of its argument. 
+#The type() function helps you keep track of the data types of variables to avoid errors throughout your code. 
+type("security")
+
+#Passing one function into another
+#When working with functions, you often need to pass them through print() 
+#if you want to output the data type to the screen.
+print(type("This is a string"))
+
+#max() and min() 
+#The max() function returns the largest numeric input passed into it. 
+#The min() function returns the smallest numeric input passed into it.
+#n a cybersecurity context, you could use these functions to identify 
+#the longest or shortest session that a user logged in for.
+time_list = [12, 2, 32, 19, 57, 22, 14]
+print(min(time_list))
+print(max(time_list))
+
+#sorted()
+#The sorted() function sorts the components of a list. 
+#The sorted() function also works on any iterable, like a string, and returns the sorted elements in a list.
+time_list = [12, 2, 32, 19, 57, 22, 14]
+print(sorted(time_list))
+
+time_list = [12, 2, 32, 19, 57, 22, 14]
+print(sorted(time_list))
+print(time_list)
+
