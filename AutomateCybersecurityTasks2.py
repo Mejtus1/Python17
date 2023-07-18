@@ -195,3 +195,28 @@ time_list = [12, 2, 32, 19, 57, 22, 14]
 print(sorted(time_list))
 print(time_list)
 
+
+#more on python build in functions (activity with code)
+
+
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#Modules and libraries
+# a library is a collection of modules that provide code users can access in their programs
+# all libraries are generally made of multiple modules
+# a module is a python file that contains additional functions, variables,
+# classes and any kind of runnable code
+
+#Python Standard Library
+# is an extensive collection of usable code that comes packaged with python 
+# useful module is "re" module
+# another one is "csv" module
+# glob, os, time, datetime
+
+#external libraries can also be downloaded 
+#Beautiful Soup = parsing HTML website files
+#NumPx = for arrays and mathematical computations
+
+
