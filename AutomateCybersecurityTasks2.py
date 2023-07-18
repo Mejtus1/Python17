@@ -136,3 +136,26 @@ print("3:" + username)     #the username variable doesnt change on global scale
 #--------------------------------------------------------------------------#
 #--------------------------------------------------------------------------#
 #Build in functions 
+#are functions that exist within python and can be called directrly
+#we already know 
+print() #outputs a specified obejct to the screen
+type() #returns a data type of its input
+
+#we can pass one functino into another as an argument
+print(type("Hello")) #outputs string 
+
+#explore input and output of print() function 
+print("This is a string, but", 75, "is a number.")
+
+#max function
+a = 3
+b = 9 
+c = 6
+print(max(a,b,c)) #it tells us the highest number of specified arguments
+
+#sorted()
+#sorts a components of a list
+usernames = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+print(sorted(usernames))
+#when we run it everything is in order
+
