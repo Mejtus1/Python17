@@ -286,3 +286,20 @@ print("median:", median_failed_attempts)
 #After a library is installed, you can import it directly into Python using the import keyword
 import numpy #we use import numpy 
 
+
+#Code readability
+#Style guides = maneual that informs the writing, formatting and design of documents
+#PEP 8 style guide = resource for programmers, how to write code so others understand it
+#PEP = Python Enhancment Proposals 
+#Code is much more red than written
+
+#Correct indentation
+#Indentation is space added at the beginning of a line of code
+#PEP 8 style guide recommends indentations to be four spaces long
+count = 0
+login_status = True
+while login_status == True:
+    print("Try again.")
+    count = count + 1
+    if count == 4:
+        login_status = False   #like this 
