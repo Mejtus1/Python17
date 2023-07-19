@@ -278,4 +278,11 @@ print("mean:", mean_failed_attempts)
 median_failed_attempts = median(monthly_failed_attempts)
 print("median:", median_failed_attempts) 
 
+#External libraries
+#In addition to the Python Standard Library, you can also download external libraries
+#Beautiful Soup (bs4) for parsing HTML files 
+#NumPy (numpy) for arrays and mathematical computations.
+%pip install numpy #installs the library
+#After a library is installed, you can import it directly into Python using the import keyword
+import numpy #we use import numpy 
 
