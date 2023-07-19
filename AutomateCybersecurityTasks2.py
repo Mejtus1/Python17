@@ -241,3 +241,41 @@ if login_analysis >= 3:
 #Import modules and libraries in Python 
 #module is a Python file that contains additional functions, variables, classes, and any kind of runnable code
 #library is a collection of modules that provide code users can access in their programs.
+
+#The "re" module, which provides functions used for searching for patterns in log files
+#The "csv" module, which provides functions used when working with .csv files
+#The "glob" and os modules, which provide functions used when interacting with the command line
+#The "time" and datetime modules, which provide functions used when working with timestamps
+#The mean() and median() are statistical functions from module statistics
+
+
+#How to import modules from the Python Standard Library
+#To access modules from the Python Standard Library, you need to import them. 
+#You can choose to either import a full module or to only import specific functions from a module. 
+
+#Importing an entire module
+#import keyword searches for a module or library in a system and adds it to the local Python environment
+
+#For example, you can specify import statistics to import the statistics module.
+#As an example, you might want to use the mean() function from the statistics module 
+#to calculate the average number of failed login attempts per month for a particular user.
+import statistics
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+mean_failed_attempts = statistics.mean(monthly_failed_attempts)
+print("mean:", mean_failed_attempts) #mean = 35.25
+print("median:", median_failed_attempts) #median = 20.5
+#we used statistics.mean() and statistics.meidan() functions in our program which we imported
+
+#Importing specific functions from a module
+#To import a specific function from the Python Standard Library, you can use the from keyword. 
+#For example, if you want to import just the median() function from the statistics module, 
+#you can write from statistics import median.
+#from statistics import mean, median #this is how we import more specific functions 
+from statistics import mean, median
+monthly_failed_attempts = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+mean_failed_attempts = mean(monthly_failed_attempts)
+print("mean:", mean_failed_attempts)
+median_failed_attempts = median(monthly_failed_attempts)
+print("median:", median_failed_attempts) 
+
+
