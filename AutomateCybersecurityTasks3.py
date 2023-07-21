@@ -181,3 +181,17 @@ print(my_list4)      #7 is what we want to input into our list
 my_list5 = ["a", "b", "c", "d", "e"]
 #remove method removes the first instance 
 my_list5.remove("d") #["a", "b", "c", "e"] = "d" is removed from the string 
+
+
+#Write a simple algorith
+#An algorith is a set of rules that solve a problem
+
+
+
+
+#Lists and the security analyst
+List data is a data structure that consists of a collection of data in sequential form. 
+You can use lists to store multiple elements in a single variable. A single list can contain multiple data types. 
+
+Working with indices in lists
+Like strings, you can work with lists through their indices, and indices start at 0. In a list, an index is assigned to every element in the list.
