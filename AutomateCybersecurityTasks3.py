@@ -212,3 +212,12 @@ username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
 print(username_list[0:2]) 
 #output is ['elarson', 'fgarcia']
 
+#Changing the elements in a list
+#Unlike strings, you can also use bracket notation to change elements in a list.
+username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
+print("Before changing an element:", username_list)
+username_list[1] = "bmoreno"
+print("After changing an element:", username_list)
+#output
+#Before changing an element: ['elarson', 'fgarcia', 'tshah', 'sgilmore']
+#After changing an element: ['elarson', 'bmoreno', 'tshah', 'sgilmore']
