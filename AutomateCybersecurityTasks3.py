@@ -97,3 +97,55 @@ print(tshah_index)
 #In the previous example, you want to locate the instance of "tshah". 
 #If you search for just "ts", Python will return 0 instead of 7 because "ts" 
 #is also a substring of "tsnow". 
+
+
+#Python activity
+employee_id = 4186
+print(type(employee_id)) #int 
+employee_id = str(4186)
+print(type(employee_id)) #string 
+
+#conditional statement that displays a message if the length of the employee ID is less than five digits
+employee_id = 4186
+employee_id = str(employee_id)
+employee_id_length = len(employee_id)
+if employee_id_length < 5:
+    print("This employee ID has less than five digits. It does not meet length requirements.")
+    
+ 
+#Write an if statement that evaluates whether the length of employee_id is less than 5.
+#reassign employee_id by concatenating "E" in front of the four-digit employee ID
+employee_id = 4186
+employee_id = str(employee_id)
+print(employee_id)
+
+employee_id_length = len(employee_id)
+
+if employee_id_length < 5:
+    employee_id = "E" + employee_id
+print(employee_id)
+
+# Extract the fourth character in `device_id` and display it
+device_id = "r262c36"
+print(device_id[4])
+
+# Extract the first through the third characters in `device_id` and display the result
+device_id = "r262c36"
+print(device_id[0:3])
+
+# Assign `url` to a specific URL
+url = "https://exampleURL1.com"
+# Extract the protocol of `url` along with the syntax following it, display the result
+print(url[0:8]) #https://
+print(url[8:25]) #exampleURL1.com
+
+# Display the index where the domain extension ".com" is located in `url`
+url = "https://exampleURL1.com"
+print(url.index(".com")) #19
+
+url = "https://exampleURL1.com"
+# Assign `ind` to the output of applying `.index()` to `url` in order to extract the starting index of ".com" in `url` 
+ind = url.index(".com")
+# Extract the website name in `url` and display it
+print(url[8:25])
+
