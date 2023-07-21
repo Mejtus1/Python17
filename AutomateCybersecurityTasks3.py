@@ -149,3 +149,35 @@ ind = url.index(".com")
 # Extract the website name in `url` and display it
 print(url[8:25])
 
+
+
+#List operations in Python 
+#List is another data type in Python 
+my_list = ["a", "b", "c", "d", "e"]
+print(my_list[1]) #= "b"
+
+#List concatenation 
+#Combining two lists into one by placing the elements of the second list after first list
+my_list1 = ["a", "b", "c", "d", "e"]
+my_list2 = ["a", "b", "c", "d", "e"]
+print(my_list1 + my_list2) #["a", "b", "c", "d", "e", "a", "b", "c", "d", "e"]
+
+#Difference between lists and strings
+#strings are immutable 
+#lists can be changed, they are immutable 
+#Change a specific element in a list 
+my_list3 = ["a", "b", "c", "d", "e"]
+my_list3[1] = 7 #["a", 7, "c", "d", "e"]
+
+#Methods for strings 
+#.insert() method = adds an element in a specific position inside a list 
+my_list4 = ["a", "b", "c", "d", "e"]
+my_list4.insert(1,7) #1, is a position in index we want to input
+print(my_list4)      #7 is what we want to input into our list 
+                     #["a", 7, "b", "c", "d", "e"] = "b" is shifted by 1 position
+                     #7 is inputted into position of "b"
+
+#.remove() method = removes the first occurence of a specific element in a list 
+my_list5 = ["a", "b", "c", "d", "e"]
+#remove method removes the first instance 
+my_list5.remove("d") #["a", "b", "c", "e"] = "d" is removed from the string 
