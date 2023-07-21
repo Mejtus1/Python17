@@ -190,8 +190,16 @@ my_list5.remove("d") #["a", "b", "c", "e"] = "d" is removed from the string
 
 
 #Lists and the security analyst
-List data is a data structure that consists of a collection of data in sequential form. 
-You can use lists to store multiple elements in a single variable. A single list can contain multiple data types. 
+#List data is a data structure that consists of a collection of data in sequential form. 
+#You can use lists to store multiple elements in a single variable. A single list can contain multiple data types. 
 
-Working with indices in lists
-Like strings, you can work with lists through their indices, and indices start at 0. In a list, an index is assigned to every element in the list.
+#Working with indices in lists
+#Like strings, you can work with lists through their indices, and indices start at 0. In a list, an index is assigned to every element in the list.
+
+
+#Bracket notation
+#Similar to strings, you can use bracket notation to extract elements or slices in a list
+username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
+print(username_list[2])
+print(["elarson", "fgarcia", "tshah", "sgilmore"][2])  #these funciton the same
+
