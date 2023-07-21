@@ -203,3 +203,12 @@ username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
 print(username_list[2])
 print(["elarson", "fgarcia", "tshah", "sgilmore"][2])  #these funciton the same
 
+#Extracting a slice from a list
+##Just like with strings, it's also possible to use bracket notation to take a slice from a list.
+#When you extract a slice from a list, the result is another list. This extracted list is called 
+#a sublist because it is part of the original, larger list. 
+
+username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
+print(username_list[0:2]) 
+#output is ['elarson', 'fgarcia']
+
