@@ -416,3 +416,31 @@ elif username in approved_users and device_id != approved_devices[ind]:
 #The user sgilmore is approved to access the system, 
 #but 4n482s is not their assigned device.
 
+#To complete this task, you must define a function named login that takes in two parameters, username and device_id
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+
+# Define a function named `login` that takes in two parameters, `username` and `device_id`
+def login(username, device_id):
+
+    if username in approved_users:
+        print("The user", username, "is approved to access the system.")
+        
+        ind = approved_users.index(username)
+        if device_id == approved_devices[ind]:
+          print(device_id, "is the assigned device for", username)
+        else:
+          print(device_id, "is not their assigned device.")
+
+    else:
+        print("The username", username, "is not approved to access the system.")
+
+login("elarson", "8rp2k75")
+#first response
+#The user elarson is approved to access the system.
+#8rp2k75 is the assigned device for elarson
+#Second response
+#The user elarson is approved to access the system.
+#8rp2k7 is not their assigned device.
+#Third response
+#The username elason is not approved to access the system.
