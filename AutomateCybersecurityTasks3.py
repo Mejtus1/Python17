@@ -394,3 +394,25 @@ if username in approved_users and device_id == approved_devices[ind]:
     print(device_id, "is the assigned device for", username)
 #The username sgilmore is approved to access the system.
 #4n482ts is the assigned device for sgilmore
+
+#It would also be helpful for users to receive messages when their username is not approved or their device ID is incorrect.
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+
+username = "sgilmore"
+device_id = "4n482ts"
+ind = approved_users.index(username)
+
+if username in approved_users and device_id == approved_devices[ind]:
+    print("The user", username, "is approved to access the system.")
+    print(device_id, "is the assigned device for", username)
+
+elif username in approved_users and device_id != approved_devices[ind]:
+    print("The user", username, "is approved to access the system, but", device_id, "is not their assigned device.")
+
+#The user sgilmore is approved to access the system.
+#4n482ts is the assigned device for sgilmore
+#OR 
+#The user sgilmore is approved to access the system, 
+#but 4n482s is not their assigned device.
+
