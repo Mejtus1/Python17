@@ -295,3 +295,42 @@ username_index = username_list.index("tshah")
 print(username_index)
 # 2
 #Because the index of "tshah" is 2, it outputs this number.
+
+#Algorithm exercise
+#There's a new employee joining the organization, and they need to be provided 
+#with a username and device ID. In the following code cell, you are given a username and device ID
+approved_users = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+approved_devices = ["8rp2k75", "hl0s5o1", "2ye3lzg", "4n482ts", "a307vir"]
+print(approved_users)
+print(approved_devices)
+#['elarson', 'bmoreno', 'tshah', 'sgilmore', 'eraab']
+#['8rp2k75', 'hl0s5o1', '2ye3lzg', '4n482ts', 'a307vir']
+new_user = "gesparza"
+new_device = "3rcv4w6"
+
+approved_users.append(new_user)
+approved_devices.append(new_device)
+print(approved_users)
+print(approved_devices)
+#['elarson', 'bmoreno', 'tshah', 'sgilmore', 'eraab', 'gesparza']
+#['8rp2k75', 'hl0s5o1', '2ye3lzg', '4n482ts', 'a307vir', '3rcv4w6']
+
+#An employee has left the team and should no longer have access to the system. 
+#In the following code cell, you are given the username and device ID of the user to be removed
+approved_users = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "2ye3lzg", "4n482ts", "a307vir", "3rcv4w6"]
+print(approved_users)
+print(approved_devices)
+#['elarson', 'bmoreno', 'tshah', 'sgilmore', 'eraab', 'gesparza']
+#['8rp2k75', 'hl0s5o1', '2ye3lzg', '4n482ts', 'a307vir', '3rcv4w6']
+removed_user = "tshah"
+removed_device = "2ye3lzg"
+
+approved_users.remove(removed_user)
+approved_devices.remove(removed_device)
+print(approved_users)
+print(approved_devices)
+#['elarson', 'bmoreno', 'sgilmore', 'eraab', 'gesparza']
+#['8rp2k75', 'hl0s5o1', '4n482ts', 'a307vir', '3rcv4w6']
+
+
