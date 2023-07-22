@@ -186,16 +186,32 @@ my_list5.remove("d") #["a", "b", "c", "e"] = "d" is removed from the string
 #Write a simple algorith
 #An algorith is a set of rules that solve a problem
 
+#Exploring first algorithm
+#List of IP addresses
+IP = ["198.567.xx.xx", "198.501.xx.xx", "180.644.xx.xx", "192.668.xx.xx", "184.690.xx.xx"]
 
+#solving this problem with one algorithm with one IP address
+address = "198.567.xx.xx"
+# Extract the first three characters of an IP address
+print(address[0:3])
+#Now we can solve this problem for one IP address we can put it into a loop and solve it for more
 
+#.append() method adds input to the end of the list 
+networks = []
+for address in IP: #as a code runs every address will be stored temporarly in address variable
+    networks.append(address[0:3])#we append the temporarly variable in address variable to add an item to the networks list
+print(networks)
 
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
 #Lists and the security analyst
 #List data is a data structure that consists of a collection of data in sequential form. 
 #You can use lists to store multiple elements in a single variable. A single list can contain multiple data types. 
 
 #Working with indices in lists
 #Like strings, you can work with lists through their indices, and indices start at 0. In a list, an index is assigned to every element in the list.
-
+listt = ["elarson", "fgarcia", "tshah", "sgilmore"]:
+#          0            1         2         3
 
 #Bracket notation
 #Similar to strings, you can use bracket notation to extract elements or slices in a list
@@ -207,7 +223,6 @@ print(["elarson", "fgarcia", "tshah", "sgilmore"][2])  #these funciton the same
 ##Just like with strings, it's also possible to use bracket notation to take a slice from a list.
 #When you extract a slice from a list, the result is another list. This extracted list is called 
 #a sublist because it is part of the original, larger list. 
-
 username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
 print(username_list[0:2]) 
 #output is ['elarson', 'fgarcia']
@@ -221,3 +236,62 @@ print("After changing an element:", username_list)
 #output
 #Before changing an element: ['elarson', 'fgarcia', 'tshah', 'sgilmore']
 #After changing an element: ['elarson', 'bmoreno', 'tshah', 'sgilmore']
+
+
+#List methods
+#List methods are functions that are specific to the list data type. 
+#These include the 
+#.insert()
+#.remove()
+#.append()
+#.index()
+
+## .insert() 
+#The .insert() method adds an element in a specific position inside a list. 
+#It has two parameters. 
+#The first is the index where you will insert the new element, 
+#and the second is the element you want to insert.
+username_list = ["elarson", "bmoreno", "tshah", "sgilmore"]
+print("Before inserting an element:", username_list)
+username_list.insert(2,"wjaffrey")
+print("After inserting an element:", username_list)
+#['elarson', 'bmoreno', 'wjaffrey', 'tshah', 'sgilmore']
+
+## .remove()
+#The .remove() method removes the first occurrence of a specific element in a list. 
+#It has only one parameter, the element you want to remove.
+username_list = ["elarson", "bmoreno", "wjaffrey", "tshah", "sgilmore"]
+print("Before removing an element:", username_list)
+username_list.remove("elarson")
+print("After removing an element:", username_list)
+#['bmoreno', 'wjaffrey', 'tshah', 'sgilmore']
+#This code removes "elarson" from the list. The elements that follow "elarson" 
+#are all shifted one position closer to the beginning of the list.
+
+#.append() 
+#The .append() method adds input to the end of a list. 
+#Its one parameter is the element you want to add to the end of the list. 
+username_list = ["bmoreno", "wjaffrey", "tshah", "sgilmore"]
+print("Before appending an element:", username_list)
+username_list.append("btang")
+print("After appending an element:", username_list)
+#['bmoreno', 'wjaffrey', 'tshah', 'sgilmore', 'btang']
+#Places "btang" at the end of the username_list
+
+#The .append() method is often used with for loops
+#to populate an empty list with elements. 
+#You can explore how this works with the following code:
+numbers_list = []
+print("Before appending a sequence of numbers:", numbers_list)
+for i in range(10):
+    numbers_list.append(i)
+print("After appending a sequence of numbers:", numbers_list)
+#[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+## .index()
+#Similar to the .index() method used for strings, the .index()
+username_list = ["bmoreno", "wjaffrey", "tshah", "sgilmore", "btang"]
+username_index = username_list.index("tshah")
+print(username_index)
+# 2
+#Because the index of "tshah" is 2, it outputs this number.
