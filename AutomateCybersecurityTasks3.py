@@ -333,4 +333,64 @@ print(approved_devices)
 #['elarson', 'bmoreno', 'sgilmore', 'eraab', 'gesparza']
 #['8rp2k75', 'hl0s5o1', '4n482ts', 'a307vir', '3rcv4w6']
 
+#As part of verifying a user's identity in the system, you'll need to check 
+#if the user is one of the approved users.
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+    
+username = "sgilmore" 
 
+if username in approved_users:
+    print("The user", username ,"is approved to access the system")
+else:
+    print("The username", username, "is not approved to access the system.")
+
+#The user sgilmore is approved to access the system
+#The username Vicky is not approved to access the system.
+
+
+#find the index of username in the approved_users
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+
+username = "sgilmore"
+ind = approved_users.index(username)
+print(ind)
+# 2
+
+
+#find an index in one list and then use this index to display connected information in another list
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+username = "sgilmore"
+ind = approved_users.index(username) # 2
+# Display the device ID at the index that matches the value of `ind` in `approved_devices`
+print(approved_devices[ind]) # checks the number of index 2 to devices index 2 and outputs it 
+
+
+#creating the algorithm is to determine if a username and device ID correspond.
+#conditional that checks if the username is an element of the approved_devices 
+#and if the device_id stored at the same index as username matches the device_id entered
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+
+username = "sgilmore"
+device_id = "4n482ts"
+ind = approved_users.index(username)
+
+# Conditional statement
+# If `username` belongs to `approved_users`, and if the device ID at `ind` in `approved_devices` matches `device_id`,
+# then display a message that the username is approved,
+# followed by a message that the user has the correct device
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+
+username = "sgilmore"
+device_id = "4n482ts"
+ind = approved_users.index(username)
+
+if username in approved_users and device_id == approved_devices[ind]:
+    print("The username", username, "is approved to access the system.")
+    print(device_id, "is the assigned device for", username)
+#The username sgilmore is approved to access the system.
+#4n482ts is the assigned device for sgilmore
