@@ -489,3 +489,21 @@ print(re.findall("\w+@\w+\.\w+",email_log))
 #the second argument indicates where to search for the pattern
 
 
+
+#More about regular expressions
+#Basics of regular expressions
+#A regular expression (regex) is a sequence of characters that forms a pattern.
+#To access regular expressions and related functions in Python, 
+#you need to import the re module first.
+import re
+#Regular expressions are stored in Python as strings. 
+#Then, these strings are used in re module functions to search through other strings.
+#There are many functions in the re module(we will use re.findall())
+#The re.findall() function returns a list of matches to a regular expression. 
+#It requires two parameters.
+import re
+re.findall("ts", "tsnow, tshah, bmoreno")
+#The output is a list of only two elements, 
+#the two matches to "ts": ['ts', 'ts'].
+#to do more than search for specific strings, you must incorporate special symbols
+
