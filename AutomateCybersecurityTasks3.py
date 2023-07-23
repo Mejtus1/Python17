@@ -444,3 +444,48 @@ login("elarson", "8rp2k75")
 #8rp2k7 is not their assigned device.
 #Third response
 #The username elason is not approved to access the system.
+
+
+
+###Regular expressions in Python 
+#they are used to search for patterns in a strings 
+#is a sequence of characters that form a pattern, we can use thom to search in file
+# + represents one or more occurrences of a specific character 
+#=regular expressions allow us to search for a string of characters 
+#"a+" searches for a matches - it could be "a" "aa" "aaa" even thousand a occurences
+"Device IDs"
+"a37rz87" #a
+"io2aap4" #aa
+"32rb5a2" #a
+"9aaa95y" #aaa
+#regular expressions would return list ["a", "aa", "a", "aaa"]
+
+#\w
+#matches with any alphanumeric character but it doesnt match symbols
+
+#\w and + sign
+#"\w" matches any alphanumeric character, and the 
+# + plus sign matches any number of occurrences of the character before it.
+#"\w+" matches
+"192"
+"abc123"
+"security"
+
+#we can use these to extract an email address from a log 
+"user1@email1.com"
+#\w+ @ \w+ \. \w+
+#this will exclude everything in our string except our specified email addresses
+
+#extract eemail addresses
+#findall() function 
+#returns a list of matches to regular expression 
+import re
+email_log = """Email recieved June 2 from user1@email.com.
+Email recieved June 2 from user2user2@email.com.
+Email rejected June 2 from invalid_user3@email.com.
+"""
+#returns a list of matches of a regular expression 
+print(re.findall("\w+@\w+\.\w+",email_log))
+#the second argument indicates where to search for the pattern
+
+
