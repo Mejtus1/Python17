@@ -575,3 +575,17 @@ re.findall("\d{2}", "h32rb17 k825t0m c2994eh")
 import re
 re.findall("\d{1,3}", "h32rb17 k825t0m c2994eh")
 #['32', '17', '825', '0', '299', '4']
+
+
+#Constructing a pattern
+#Constructing a regular expression requires you to break down the pattern you're searching 
+#for into smaller chunks and represent those chunks using the symbols 
+
+#Your task is to extract the username and the login attempts, without the employee's ID number or department.
+import re
+pattern = "\w+:\s\d+"
+employee_logins_string = "1001 bmoreno: 12 Marketing 1002 tshah: 7 Human Resources 1003 sgilmore: 5 Finance"
+print(re.findall(pattern, employee_logins_string))
+#['bmoreno: 12', 'tshah: 7', 'sgilmore: 5']
+#The corresponding regular expression symbols are \w+, :, \s, and \d+ 
+#respectively. Using these symbols as your regular expression,
