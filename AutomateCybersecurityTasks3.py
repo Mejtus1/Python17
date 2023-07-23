@@ -507,3 +507,26 @@ re.findall("ts", "tsnow, tshah, bmoreno")
 #the two matches to "ts": ['ts', 'ts'].
 #to do more than search for specific strings, you must incorporate special symbols
 
+
+
+###Regular expression symbols
+
+#Symbols for character types
+#\w matches with any alphanumeric character.
+import re
+re.findall("\w", "h32rb17")
+#['h', '3', '2', 'r', 'b', '1', '7']
+
+# . matches to all characters, including symbols
+# \d matches to all single digits [0-9]
+# \s matches to all single spaces 
+# \. matches to the period character
+
+import re
+re.findall("\d", "h32rb17")
+#['3', '2', '1', '7']
+
+import re
+re.findall("\.", "h32rb17")
+#['h', '3', '2', 'r', 'b', '1', '7']
+
