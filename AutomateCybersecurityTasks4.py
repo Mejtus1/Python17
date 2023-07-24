@@ -39,3 +39,20 @@ with open("name_of_text_file.txt", "r") as file:
 #used with the open() function to open a file. It will then manage 
 #the resources by closing the file after exiting the with statement.
 
+#open()
+#The open() function opens a file in Python.
+#IF THE FILE WE WANT TO OPEN IS LOCATED IN THE SAME DIRECTORY AS PYTHON FILE THAT 
+#WILL ACCESS IT, WE DONT HAVE TO SPECIFY PATH (otherwise there is specification needed)
+#A file path is the location of a file or directory. An absolute file path starts from the 
+#highest-level directory, the root. In the following code, 
+#the first parameter of the open() function includes the absolute file path to "access_log.txt": 
+with open("/home/analyst/logs/access_log.txt", "r") as file:
+#In Python, the names of files or their file paths can be handled as string data, 
+#and like all string data, you must place them in quotation marks
+
+#as
+#When you open a file using with open(), you must provide a variable that can store 
+#the file while you are within the with statement. You can do this through the keyword 
+#as followed by this variable name. The keyword as assigns a variable that references 
+#another object. The code with open("update_log.txt", "r") as file: assigns file to 
+#reference the output of the open() function within the indented code block that follows it.
