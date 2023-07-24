@@ -34,12 +34,12 @@ with open("name_of_text_file.txt", "r") as file:
 #it consists of the with keyword, the open() function with its two parameters, 
 #and the as keyword followed by a variable name.
 
-#with()
+##with()
 #The keyword with handles errors and manages external resources when used with other functions. 
 #used with the open() function to open a file. It will then manage 
 #the resources by closing the file after exiting the with statement.
 
-#open()
+##open()
 #The open() function opens a file in Python.
 #IF THE FILE WE WANT TO OPEN IS LOCATED IN THE SAME DIRECTORY AS PYTHON FILE THAT 
 #WILL ACCESS IT, WE DONT HAVE TO SPECIFY PATH (otherwise there is specification needed)
@@ -50,14 +50,14 @@ with open("/home/analyst/logs/access_log.txt", "r") as file:
 #In Python, the names of files or their file paths can be handled as string data, 
 #and like all string data, you must place them in quotation marks
 
-#as
+##as
 #When you open a file using with open(), you must provide a variable that can store 
 #the file while you are within the with statement. You can do this through the keyword 
 #as followed by this variable name. The keyword as assigns a variable that references 
 #another object. The code with open("update_log.txt", "r") as file: assigns file to 
 #reference the output of the open() function within the indented code block that follows it.
 
-#Reading files in Python
+##Reading files in Python
 with open("update_log.txt", "r") as file:
 
     updates = file.read()
@@ -72,3 +72,21 @@ print(updates)
 #For example, you could use the .index() method to return the index where 
 #a certain character or substring appears. Or, you could use 
 #len() to return the length of this string.
+
+##Writing files in Python
+#To write to a file, you will need to open the file with "w" or "a" as the second argument of open()
+#
+#You should use the "w" argument when you want to replace the contents of an 
+#existing file. When working with the existing file update_log.txt, 
+#the code with open("update_log.txt", "w") as file: 
+#opens it so that its contents can be replaced.
+#
+#Additionally, you can use the "w" argument to create a new file. 
+#For example, with open("update_log2.txt", "w") as file: 
+#creates and opens a new file called "update_log2.txt". 
+#
+#You should use the "a" argument if you want to append new information to the 
+#end of an existing file rather than writing over it. 
+#The code with open("update_log.txt", "a") as file: 
+#opens "update_log.txt" so that new information can be appended to the end. 
+#Its existing information will not be deleted.
