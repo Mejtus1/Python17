@@ -90,3 +90,24 @@ print(updates)
 #The code with open("update_log.txt", "a") as file: 
 #opens "update_log.txt" so that new information can be appended to the end. 
 #Its existing information will not be deleted.
+
+
+##Parse a text file in Python
+#Parsing
+#is the process of converting data into a more readable format
+
+#split() method
+#converts a string into a list (separating the string based on a specified character)
+#(if no argument is passed, every time it encounters a whitespace, it separates the string)
+"We are learning about parsing!" #it converts it into this list:
+["We", "are", "learning", "about", "parsing!"]
+
+
+#previous file, open a file and print it into a string 
+with open("name_of_text_file.txt", "r") as file:
+    file_text = file.read(name_of_the_text_file.txt)
+    print(file_text.split()) #using split() method 
+#we now slip the string into a list using split() method 
+usernames = file_text.split()
+#we need to store the output into variable so we can use it in other code
+#we store file_text.split() in usernames and store there output 
