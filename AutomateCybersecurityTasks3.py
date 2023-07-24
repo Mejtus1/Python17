@@ -589,3 +589,13 @@ print(re.findall(pattern, employee_logins_string))
 #['bmoreno: 12', 'tshah: 7', 'sgilmore: 5']
 #The corresponding regular expression symbols are \w+, :, \s, and \d+ 
 #respectively. Using these symbols as your regular expression,
+
+#Exercise: using regular expressions in python 
+#importing the re module.
+import re
+devices = "r262c36 67bv8fy 41j1u2e r151dm4 1270t3o 42dr56i r15xk9h 2j33krk 253be78 ac742a1 r15u9q5 zh86b2l ii286fq 9x482kt 6oa6m6u x3463ac i4l56nq g07h55q 081qc9t r159r1u"
+target_pattern = "r15\w+"
+print(re.findall())
+#\w matches with any alphanumeric character.
+#+ matches with one or more occurrences of the character before it in the pattern.
+#findall() function find the device IDs that start with "rt15"
