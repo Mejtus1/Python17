@@ -56,3 +56,19 @@ with open("/home/analyst/logs/access_log.txt", "r") as file:
 #as followed by this variable name. The keyword as assigns a variable that references 
 #another object. The code with open("update_log.txt", "r") as file: assigns file to 
 #reference the output of the open() function within the indented code block that follows it.
+
+#Reading files in Python
+with open("update_log.txt", "r") as file:
+
+    updates = file.read()
+
+print(updates)
+#The .read() method converts files into strings. 
+#This is necessary in order to use and display the contents of the file
+#the file variable is used to generate a string of the file contents through .read()
+#This string is then stored in another variable called updates
+#Once the file is read into the updates string, you can perform the same 
+#operations on it that you might perform with any other string. 
+#For example, you could use the .index() method to return the index where 
+#a certain character or substring appears. Or, you could use 
+#len() to return the length of this string.
