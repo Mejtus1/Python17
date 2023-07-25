@@ -132,3 +132,14 @@ removed_users = "wjaffrey jsoto abernard jhill awilliam"
 print("before .split():", removed_users) #wjaffrey jsoto abernard jhill awilliam
 removed_users = removed_users.split()
 print("after .split():", removed_users) #['wjaffrey', 'jsoto', 'abernard', 'jhill', 'awilliam']
+
+#Applying .split() to files
+#The .split() method allows you to work with file content as a list after you've 
+#converted it to a string through the .read() method. This is useful in a variety of ways. 
+#For example, if you want to iterate through the file contents in a for loop, this can be 
+#easily done when it's converted into a list.
+with open("update_log.txt", "r") as file:
+    updates = file.read()
+updates = updates.split()
+#Once a file is read into the updates variable, it is not needed and can be closed
+
