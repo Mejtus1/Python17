@@ -143,3 +143,16 @@ with open("update_log.txt", "r") as file:
 updates = updates.split()
 #Once a file is read into the updates variable, it is not needed and can be closed
 
+#.join()
+#if you need to convert a list into a string, there is also a method for that. 
+#The .join() method concatenates the elements of an iterable into a string
+approved_users = ["elarson", "bmoreno", "tshah", "sgilmore", "eraab"]
+print("before .join():", approved_users) #['elarson', 'bmoreno', 'tshah', 'sgilmore', 'eraab']
+approved_users = ",".join(approved_users)
+print("after .join():", approved_users) #elarson,bmoreno,tshah,sgilmore,eraab
+#Before .join() is applied, approved_users is a list of five elements
+#Another way to separate elements when using the .join() method is to use "\n", 
+#which is the newline character. The "\n" character indicates to separate the 
+#elements by placing them on new lines
+
+
