@@ -155,4 +155,21 @@ print("after .join():", approved_users) #elarson,bmoreno,tshah,sgilmore,eraab
 #which is the newline character. The "\n" character indicates to separate the 
 #elements by placing them on new lines
 
+#Applying .join() to files
+#You might need to convert files back to strings from lists
+with open("update_log.txt", "r") as file:
+    updates = file.read()
+updates = updates.split()
+#After you're through performing operations using the list in the updates variable, 
+#you might want to replace "update_log.txt" with the new contents. To do so, 
+#you need to first convert updates back into a string using .join(). Then, 
+#you can open the file using a with statement and use the .write() method to 
+#write the updates string to the file
+updates = " ".join(updates)
+with open("update_log.txt", "w") as file
+    file.write(updates)
+#The code " ".join(updates) indicates to separate each of the list elements 
+#in updates with a space once joined back into a string. And because "w" is 
+#specified as the second argument of open(), Python will overwrite the 
+#contents of "update_log.txt" with the string currently in the updates variable
 
