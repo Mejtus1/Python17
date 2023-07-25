@@ -111,3 +111,24 @@ with open("name_of_text_file.txt", "r") as file:
 usernames = file_text.split()
 #we need to store the output into variable so we can use it in other code
 #we store file_text.split() in usernames and store there output 
+
+##Work with files in Python
+#Parsing
+#Parsing is the process of converting data into a more readable format
+#Methods that can help you parse your data include .split() and .join()
+
+#.split()
+#The .split() method converts a string into a list
+#It separates the string based on a specified character that's passed into .split() as an argument
+approved_users = "elarson,bmoreno,tshah,sgilmore,eraab"
+print("before .split():", approved_users) # elarson,bmoreno,tshah,sgilmore,eraab
+approved_users = approved_users.split(",")
+print("after .split():", approved_users) #['elarson', 'bmoreno', 'tshah', 'sgilmore', 'eraab']
+#Before the .split() method is applied to approved_users, it contains a string,
+#but after it is applied, this string is converted to a list.
+
+#If you do not pass an argument into .split(), it will separate the string every time it encounters a whitespace.
+removed_users = "wjaffrey jsoto abernard jhill awilliam"
+print("before .split():", removed_users) #wjaffrey jsoto abernard jhill awilliam
+removed_users = removed_users.split()
+print("after .split():", removed_users) #['wjaffrey', 'jsoto', 'abernard', 'jhill', 'awilliam']
