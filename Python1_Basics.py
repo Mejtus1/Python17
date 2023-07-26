@@ -96,3 +96,27 @@ a == b # (False)
 a != b #not equal (True)
 a > b #bigger than (False)
 a <= b #less than or equal (True)
+
+
+
+#--------------------------------------------------------------------------#
+#--------------------------------------------------------------------------#
+#Boolean operators 
+condition1 = True
+condition2 = False
+
+not condition1 #False
+condition1 and condition2 #False
+condition1 or condition2 #True
+#These are AND TRUE OR operators 
+#OR used in an expression returns a value of a first oeprant that is not a first value 
+print(0 or 1) #since first is false it automatically returns the second one 
+print(False or "hey") #hey
+print("hi" or "hey") #hi 
+print(() or False) #returns False because it evaulates empty brackets as false 
+print(False or ())
+#if x is false then y else x
+
+
+
+
