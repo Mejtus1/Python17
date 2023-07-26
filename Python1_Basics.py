@@ -146,3 +146,4 @@ def is_adult(age): #longer version
 def is_adult(age):
    return True if age > 18 else False #ternary = if else statement on single line 
 
+
