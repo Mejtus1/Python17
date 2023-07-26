@@ -136,3 +136,13 @@ is
 in 
 #membership operator - used in lists and sequences
 
+#ternary operator
+def is_adult(age): #longer version 
+   if age > 18:
+      return True
+   else: 
+      return False
+   
+def is_adult(age):
+   return True if age > 18 else False #ternary = if else statement on single line 
+
