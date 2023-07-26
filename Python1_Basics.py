@@ -117,6 +117,11 @@ print(() or False) #returns False because it evaulates empty brackets as false
 print(False or ())
 #if x is false then y else x
 
+print(0 and 1) # 0
+print(1 and 0) # 0 
+print(False and "hey") # False
+print(() and False) # ()
+# if x is false then x else y 
 
 
 
