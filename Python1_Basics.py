@@ -123,5 +123,12 @@ print(False and "hey") # False
 print(() and False) # ()
 # if x is false then x else y 
 
+#Bitwise operators
+& performs binary AND 
+| performs binary OR 
+ performs a binary XOR operation 
+~ performs a binray NOT operation
+<< shift left operation
+>> shift right operation 
 
 
