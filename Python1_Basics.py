@@ -89,3 +89,10 @@ year *= 17 #multiplies year = year * 17
 print(year)
 
 #Comparison operators
+a = 1
+b = 2 
+
+a == b # (False)
+a != b #not equal (True)
+a > b #bigger than (False)
+a <= b #less than or equal (True)
