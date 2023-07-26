@@ -131,4 +131,8 @@ print(() and False) # ()
 << shift left operation
 >> shift right operation 
 
+is 
+#identity operator - used in objects
+in 
+#membership operator - used in lists and sequences
 
