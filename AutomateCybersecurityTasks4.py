@@ -173,3 +173,60 @@ with open("update_log.txt", "w") as file
 #specified as the second argument of open(), Python will overwrite the 
 #contents of "update_log.txt" with the string currently in the updates variable
 
+
+#Activity: Import and parse a text file
+#To analyze the security logs in these files, security analysts have to import and parse these files.
+import_file = "login.txt"
+
+with open(import_file, "r") as file: #import_file is saved as file on our system
+    text = file.read()
+print(file) #<_io.TextIOWrapper name='login.txt' mode='r' encoding='UTF-8'>
+
+
+import_file = "login.txt"
+with open(import_file, "r") as file:
+  text = file.read()
+# Display the contents of `text` split into separate lines 
+print(text.split())
+#['username,ip_address,time,date', 'tshah,192.168.92.147,15:26:08,2022-05-10', 
+#'dtanaka,192.168.98.221,9:45:18,2022-05-09', 'tmitchel,192.168.110.131,14:13:41,2022-05-11',]
+
+
+import_file = "login.txt"
+missing_entry = "jrafael,192.168.243.140,4:56:27,2022-05-09"
+# Use `open()` to import security log file and store it as a string
+# Pass in "a" as the second parameter to indicate that the file is being opened for appending purposes
+with open(import_file, "a") as file:
+    file.write(missing_entry)
+with open(import_file, "r") as file:
+    text = file.read()
+print(text)
+
+
+#There is a missing entry in the log file. You'll need to account for that by appending it to the log file. 
+#You're given the missing entry stored in a variable named missing_entry.
+import_file = "login.txt"
+
+missing_entry = "jrafael,192.168.243.140,4:56:27,2022-05-09"
+
+with open(import_file, "a") as file:
+    file.write(missing_entry)
+with open(import_file, "r") as file:
+    text = file.read()
+print(text)
+
+#creating a text file
+import_file = "allow_list.txt"
+ip_addresses = "192.168.218.160 192.168.97.225 192.168.145.158 192.168.108.13 192.168.60.153 192.168.96.200 192.168.247.153 192.168.3.252 192.168.116.187 192.168.15.110 192.168.39.246"
+print(import_file)
+print(ip_addresses)
+#read the file containing IP addresses
+import_file = "allow_list.txt"
+ip_addresses = "192.168.218.160 192.168.97.225 192.168.145.158 192.168.108.13 192.168.60.153 192.168.96.200 192.168.247.153 192.168.3.252 192.168.116.187 192.168.15.110 192.168.39.246"
+with open(import_file, "w") as file:
+    file.write(ip_addresses)
+with open(import_file, "r")as file:
+    text = file.read()
+print(text)
+
+
