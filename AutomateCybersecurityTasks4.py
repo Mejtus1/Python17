@@ -300,6 +300,12 @@ def update_file(import_file, remove_list)
 
         file.write(ip_addresses)
 
+#Debugging Python code
+#fixing code can take even more time than writing code 
+#there are 3 types of errors: Syntax, Logic, Exceptions 
+#Syntax error = invalid syntax = missing semicolon behind (python displays location of the error)
+#Logic error = logic inside code doesnt function properly ( if statement with < 3 condition, someone forgets that it should be <= 3 )
+#Exceptions = (mathematically impossible, accessing index values or variables that doesnt exist)
 
 ##########################################################################
 #Python file algorithm TEST
