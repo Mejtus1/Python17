@@ -331,3 +331,14 @@ with open(import_file, "r") as file:
 #After this, I used the .join() method to convert the ip_addresses back into a 
 #string so that I could write over the contents of the "allow_list.txt" file 
 #with the revised list of IP addresses.
+
+#Test 2 
+#1. open file logs.txt and store file variable for reading purposes
+#a) with open("logs.txt", "r") as file:
+
+#2. you have oppened login_file, read it and store in variable login_attempts
+#c) login_attempts = login_file.read()
+
+#3. file contains string of IPs separated by whitespace, spearate individual IPs and store it in variable ip_addresses
+#a) ip_addresses = file.split()
+
