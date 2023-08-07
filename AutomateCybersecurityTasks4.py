@@ -248,3 +248,54 @@ def login_check(login_list, current_user):
             return: "You can log in!"
 login_check(usernames, "eraab") #when we run our code and algorith
 #we get an account locked message 
+
+
+
+#Exercise
+#Display both variables to explore their contents
+import_file = "allow_list.txt"
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+
+print(import_file) #allow_list.txt
+print(remove_list) #['192.168.97.225', '192.168.158.170', '192.168.201.40', '192.168.58.57']
+
+#use the .read() method to read the imported file in as a string and store it in a variable named ip_addresses
+import_file = "allow_list.txt"
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+with open(import_file, "r") as file:
+  ip_addresses = file.read()
+
+print(ip_addresses)#ip address ,192.168.25.60, 192.168.205.12, 192.168.97.225 ....
+
+#reassign the ip_addresses variable so its data type is updated from a string to a list
+import_file = "allow_list.txt"
+remove_list = ["192.168.97.225", "192.168.158.170", "192.168.201.40", "192.168.58.57"]
+with open(import_file, "r") as file:
+    ip_addresses = file.read()
+ip_addresses = ip_addresses.split() #.split method changes data type from string to a list 
+print(ip_addresses)
+
+
+#write code that removes the elements of remove_list from the ip_addresses list
+# Build `with` statement to rewrite the original file
+# Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
+
+#loop variable = (typically) i, in this exercise = element
+#.remove() method deletes only first occurence of an element in the file 
+# Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
+def update_file(import_file, remove_list)
+    with open(import_file, "r") as file: #imports file as read
+       
+        ip_addresses = file.read()       #we read imported file and store it in ip_addresses variable 
+        
+    ip_addresses = ip_addresses.split() #.split() converts string to a list 
+
+    for element in remove_list: #build an itertarive statement
+        if element in ip_addresses: #if element is in ip addresses
+            ip_addresses.remove(element) #.remove method to remove elements from ip_addresses
+
+    ip_addresses = "\n".join(ip_addresses) #converts ip_addresses back to a string from list 
+
+    with open(import_file, "w") as file: #rewriting the original file 
+
+        file.write(ip_addresses)
