@@ -230,3 +230,21 @@ with open(import_file, "r")as file:
 print(text)
 
 
+#Develop a parsing algorithm
+#program checking for certain username and if the username is 3 or more times the alert will be displayed
+with open("login_attempts.txt", "r") as file:
+    usernames = file_text.split()
+    print(usernames) #shows contents of usernames (it is full of names)
+#python checks and counts if the specified name is in the list 
+
+def login_check(login_list, current_user):
+    counter = 0
+    for i in login_list:
+        if i == current_user:
+            counter = counter + 1
+        if counter >= 3:
+            return "You have tried to login three or more times. Your account has been locked"
+        else:
+            return: "You can log in!"
+login_check(usernames, "eraab") #when we run our code and algorith
+#we get an account locked message 
