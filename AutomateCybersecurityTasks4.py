@@ -352,7 +352,6 @@ else:
 #However, this is not true since the maximum number of login attempts is five. 
 #This is a logic error.
 
-COMMIT 1 
 #Exceptions
 #An exception is an error that involves code that cannot be executed even though 
 #it is syntactically correct. This happens for a variety of reasons.
@@ -376,6 +375,22 @@ print("Unusual logins:", unusual_logins)
 "TypeError": A type error results from using the wrong data type. For example, if you tried to perform a mathematical calculation by adding a string value to an integer, you would get a type error.
 "FileNotFound": A file not found error occurs when you try to open a file that does not exist in the specified location.
 
+#Debuggers 
+#In cases when you can't find the line of code that is causing the issue, 
+#debuggers help you narrow down the source of the error in your program.
+#you may have code that is intended to add new users to an approved list and then display the approved list. 
+#The code should not add users that are already on the approved list.
+new_users = ["sgilmore", "bmoreno"]
+approved_users = ["bmoreno", "tshah", "elarson"]
+def add_users():
+    for user in new_users:
+        if user in approved_users:
+            print(user,"already in list")
+        approved_users.append(user)
+add_users()
+print(approved_users)
+
+Applying debugging strategies 
 
 ##########################################################################
 #Python file algorithm TEST
