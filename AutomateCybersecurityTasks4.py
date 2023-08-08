@@ -326,7 +326,6 @@ print(message)
 #The error message also indicates that the error happens on the first line. )
 #The error occurred because a quotation mark was missing at the end of the string on the first line. 
 #You can fix it by adding that quotation mark.
-
 #Note: You will sometimes encounter the error label "IndentationError" instead of "SyntaxError". 
 #"IndentationError" is a subclass of "SyntaxError" that occurs when the indentation 
 #used with a line of code is not syntactically correct. 
@@ -353,7 +352,29 @@ else:
 #However, this is not true since the maximum number of login attempts is five. 
 #This is a logic error.
 
+COMMIT 1 
+#Exceptions
+#An exception is an error that involves code that cannot be executed even though 
+#it is syntactically correct. This happens for a variety of reasons.
+#One common cause of an exception is when the code includes a variable that hasn't been assigned 
+#or a function that hasn't been defined. In this case, your output will include 
+#"NameError" to indicate that this is a name error. After you run the following
+#code, use the error message to determine which variable was not assigned:
+username = "elarson"
+month = "March"
+total_logins = 75
+failed_logins = 18
+print("Login report for", username, "in", month)
+print("Total logins:", total_logins)
+print("Failed logins:", failed_logins)
+print("Unusual logins:", unusual_logins)
+#The output indicates there is a "NameError" involving the unusual_logins variable. 
+#You can fix this by assigning this variable a value.
 
+#other types of errors 
+"IndexError": An index error occurs when you place an index in bracket notation that does not exist in the sequence being referenced. For example, in the list usernames = ["bmoreno", "tshah", "elarson"], the indices are 0, 1, and 2. If you referenced this list with the statement print(usernames[3]), this would result in an index error.
+"TypeError": A type error results from using the wrong data type. For example, if you tried to perform a mathematical calculation by adding a string value to an integer, you would get a type error.
+"FileNotFound": A file not found error occurs when you try to open a file that does not exist in the specified location.
 
 
 ##########################################################################
