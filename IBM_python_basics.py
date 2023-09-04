@@ -8,6 +8,8 @@
 #Boolean 
 #True or False
 
+
+
 ############################################################################################
 #Expressions and Variables
 #Expressions describe a type of operation the computers perform
@@ -25,6 +27,8 @@ print(25//6)
 my_variable = 1
 print(my_variable)
 #Variable names should be correlated with values or value they represent 
+
+
 
 ############################################################################################
 #String Operations 
@@ -52,10 +56,18 @@ D = C.replace("Hey","hello") #replaces Hey with hello
 
 
 
-
-
-
-
 ############################################################################################
+#Lists and Touples
+#one of key data types in python 
+
+#Touples 
+#Touples are an oredered sequence
+#Touples are written as comma- separated elements within parentheses
+Ratings = (10,9,6,5,10,8,9,6,2)
+touple1 = ("disco",10,1.2) #more data types
+# all touples can be accesed through an index
+touple1[0] #"disco"
+touple1[1] #"10"
+touple1[2] #"1.2"
 ############################################################################################
 ############################################################################################
