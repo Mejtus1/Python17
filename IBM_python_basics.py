@@ -1,73 +1,50 @@
-#Types 
-# int = 11
-# float = 21.123
+#Describe the basic syntax of Python 
+#in Python needs to be same number of spaces in a code block
 
-#Typecasting (changing data types)
-# changing int to float 
+a_variable = 1
+A_variable = 2
+print (a_variable, A_variable) #1,2
+#variable names are case sensitive
 
-#Boolean 
-#True or False
+#Data types in Python 
+#Data type is set when we assign value to a variable
+#   int   Integer numbers   -1, 17, 26
+#   float   Real numbers    3.14, 1.23,
+#   complex Complex numbers 3+4j, 5.0+4.1j,
+#   bool    Boolean values  True, False
+#   str     string characters   "", "Hey"
 
+number = 3
+type(number) #int 
 
+float(number)
+type(number)
 
-############################################################################################
-#Expressions and Variables
-#Expressions describe a type of operation the computers perform
-#Expressions are operations the python performs
+number = float(number)
+print(type(number)) #class "float"
+print(number) #3.0
 
-#Methematical expressions 
-print(5+5)
-print(4-4)
-print(4*4)
-print(4/4)
-print(25//6) 
-#python follows mathematical conventions 
+string = "Hello World!"
+int(string) #ValueError
 
-#Variables
-my_variable = 1
-print(my_variable)
-#Variable names should be correlated with values or value they represent 
+#String operations 
+#                       P  Y  T  H  O  N 
+#indexing               0  1  2  3  4  5
+#negative ingexing     -6 -5 -4 -3 -2 -1
 
+#Python Arithmetical Operations
+#   +   Addition      10+12
+#   -   Subtraction    5-1
+#   *   Multiplication 5*1
+#   /   Division       10/5
+#   //  Int Division   9//4
+#   %   Modulation     9 % 4
 
+#Python comparison operators
+#   ==  Equal to
+#   !=  Inequal to
+#   <   Less than
+#   <=  Less than or equal to
+#   >   Greather than
+#   >=  Greater than or equal to 
 
-############################################################################################
-#String Operations 
-#String is a sequence of characters 
-Name = "Vicky"
-#each Character is represented by a index (starts at 0) 
-#V = 0, i = 1, c = 2, k = 3, y = 4
-
-#we can concatenate strings 
-Name = "Vicky"
-Statement = Name + "is my name"
-print(Statement)
-3* "Vicky" #3 copies of the string 
-
-#\n represents a new line in a string
-print("Hello, my name is \n Vicky") 
-
-#String Methods and functinos 
-#.upper()
-A="Hey there"
-B = A.upper() #value of B is similar to A but all the characters ale upper case
-
-C = "Hey there"
-D = C.replace("Hey","hello") #replaces Hey with hello
-
-
-
-############################################################################################
-#Lists and Touples
-#one of key data types in python 
-
-#Touples 
-#Touples are an oredered sequence
-#Touples are written as comma- separated elements within parentheses
-Ratings = (10,9,6,5,10,8,9,6,2)
-touple1 = ("disco",10,1.2) #more data types
-# all touples can be accesed through an index
-touple1[0] #"disco"
-touple1[1] #"10"
-touple1[2] #"1.2"
-############################################################################################
-############################################################################################
