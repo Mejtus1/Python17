@@ -93,3 +93,33 @@ i=0
 while (L[i]>=0):
     print(L[i])
     i=i+1
+
+#Funtions 
+#function is a block of code that only runs when it is called
+#Python has many build in functions:
+#type(4) = int 
+#len([1,2,3]) = 3
+#sum([1,2,3]) = 1+2+3=6
+#float(6) = 6.0
+#print("Hello World") = "Hello World"
+
+#Defining function 
+    def function_name(input_parameters)
+        body of the function
+        return output 
+#We use functions because they cen be reused many times and automate tasks 
+
+def max_function(a,b):
+    if a>b
+        Max = a
+    else:
+        Max = b
+    return Max
+max_function(5,7) #7
+max_function("A","B") #B
+
+#Methods 
+#Methods function the same way as functions but they are a little bit different 
+#They are a set of procedures for interacting with the data in an object
+#sorted(L) = function 
+#L.sort = method 
