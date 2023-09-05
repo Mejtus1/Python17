@@ -123,3 +123,18 @@ max_function("A","B") #B
 #They are a set of procedures for interacting with the data in an object
 #sorted(L) = function 
 #L.sort = method 
+
+#Libraries
+
+#Scientific Computing Libraries:
+#Pands(data structure and tools)
+#NumPy(arrays and matrices)
+#SciPy(integrals, solving differential equations, optimization)
+
+#Visualization Libraries:
+#Matplotlib(most popular for plots and graphs)
+#SeaBorn(heat maps, time series and violin plots)
+
+#Algorithmic Libraries:
+#Scikit-learn(tools for statistical modeling: regression, classification, clustering)
+#StatsModels(explore data, estimate statistical models and perform statistical tests)
